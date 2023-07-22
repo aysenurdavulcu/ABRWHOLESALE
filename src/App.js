@@ -5,8 +5,10 @@ import './App.css';
 import SearchBar from './components/SearchBar';
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Products from "./components/Products"
-
+import Products from "./components/Products";
+import Item from "./components/Item";
+import Contact from "./components/Contact";
+import About from "./components/About";
 
 
 
@@ -25,6 +27,9 @@ function App()  {
           <Route path='/login' element={ <Login/> }/>
           <Route path='/register' element={ <Register/> }/>
           <Route path='/SearchBar' element={ <SearchBar/> }/>
+          <Route path='/item' element={ <Item/> }/>
+          <Route path='/about' element={ <About/> }/>
+          <Route path='/contact' element={ <Contact/> }/>
         </Routes>
       </Router>
     </div>

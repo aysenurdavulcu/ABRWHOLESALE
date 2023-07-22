@@ -1,6 +1,7 @@
 import React, {useDeferredValue, useState} from 'react'
 import {FaSearch} from "react-icons/fa";
 import "./SearchBar.css";
+import Navbar from "./Navbar"
 
 function SearchBar(){
     const [input, setInput] = useState("");
@@ -21,6 +22,7 @@ function SearchBar(){
 
 return (
 <div className='input-wrapper'>
+    <Navbar/>
     <FaSearch id = "search-icon"/>
     <input placeholder = "Type to search..." 
     value= {input} 

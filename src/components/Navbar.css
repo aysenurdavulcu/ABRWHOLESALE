@@ -1,15 +1,19 @@
 .navbar__body{
-    background-color: rgb(90, 119, 145);
+    /* background-color: rgba(255, 255, 255, 0.6); */
     width: 100%;
     height: 50px;
     display: flex;
     font-size: 2.9vh;
     padding: 15px;
-  
-
-    
-
+    width: 400px;
+    margin: auto;
 }
 .nav__item{
     margin-left: 10%;
+    text-decoration: none;
+    color:white;
+}
+.nav__item:hover{
+    cursor: pointer;
+    color: pink;
 }

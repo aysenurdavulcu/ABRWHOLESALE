@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Navbar from "./Navbar"
 
 function Register(props){
     const [email, setEmail] = useState('');
@@ -11,6 +12,7 @@ function Register(props){
     }
     return ( 
         <div className = "auth-form-container">
+            <Navbar/>
             <h2>Register</h2>
         <form className = "register-form" onSubmit = {handleSubmit}>
             <label htmlFor="name"> Full name</label>
