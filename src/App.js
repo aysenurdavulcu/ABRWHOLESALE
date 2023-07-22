@@ -26,6 +26,7 @@ function App()  {
         {/* <div className = "new-items">Browse our newest items</div> */}
         {/* <div>SearchResults</div> */}
         {/* <Products/> */}
+        
       </div>
     </div>
   );
