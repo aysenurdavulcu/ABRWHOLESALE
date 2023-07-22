@@ -1,9 +1,12 @@
 import React, {useState} from "react";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-import { SearchBar } from './components/SearchBar';
-import { Login} from "./components/Login";
-import { Register} from "./components/Register";
+import SearchBar from './components/SearchBar';
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Products from "./components/Products"
+
 
 
 
@@ -16,18 +19,14 @@ function App()  {
 
   return (
     <div className="App">
-      <div className="search-bar-container">
-        {/* <div className = "title">ABR Wholesale </div> */}
-        {/* <SearchBar/> */}
-        {/* { 
-          currentForm === "login" ? <Login onFormSwitch = {toggleForm} /> : <Register />
-        } */}
-
-        {/* <div className = "new-items">Browse our newest items</div> */}
-        {/* <div>SearchResults</div> */}
-        {/* <Products/> */}
-        
-      </div>
+      <Router>
+        <Routes>
+          <Route path='/' element={ <Products/> }/>
+          <Route path='/login' element={ <Login/> }/>
+          <Route path='/register' element={ <Register/> }/>
+          <Route path='/SearchBar' element={ <SearchBar/> }/>
+        </Routes>
+      </Router>
     </div>
   );
 }

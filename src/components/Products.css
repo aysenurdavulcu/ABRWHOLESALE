@@ -1,0 +1,25 @@
+.products__title{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 12%;
+}
+.products__section{
+    margin-top: 12%;
+    border: solid #fff;
+    width: 100%;
+    height: 100%;
+}
+.products__row{
+    margin-top: 2%;
+    border: solid #fff;
+    background-color: aquamarine;
+    width: 100%;
+    height: 120px;
+    overflow-x: scroll;
+}
+.products__item{
+    border: solid #fff;
+    background-color: rgb(2, 84, 57);
+    width: 20%;
+    height: 120px;
+}

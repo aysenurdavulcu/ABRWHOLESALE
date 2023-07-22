@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 
-export const Login = (props) => {
+function Login(props){
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
@@ -18,9 +18,10 @@ export const Login = (props) => {
            <label htmlFor ="password"> password </label>
            <input value = {pass} type = "password" placeholder = "******" id= "password" name="password"/>
             <button type = "submit">LogIn</button>
-           </form>
+        </form>
            <button className = "link-btn" onClick={() => props.onFormSwitch('register')}> Dont have an account? Register </button>
            </div>
         
     )
 }
+export default Login

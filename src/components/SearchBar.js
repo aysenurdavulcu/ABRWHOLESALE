@@ -2,7 +2,7 @@ import React, {useDeferredValue, useState} from 'react'
 import {FaSearch} from "react-icons/fa";
 import "./SearchBar.css";
 
-export const SearchBar = () => {
+function SearchBar(){
     const [input, setInput] = useState("");
 
     const fetchData = (value) => {
@@ -28,3 +28,4 @@ return (
 </div>
 );
 };
+export default SearchBar
